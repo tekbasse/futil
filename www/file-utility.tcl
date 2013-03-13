@@ -1,4 +1,53 @@
+# futil/www/file-utility.tcl
+# part of the FUTIL package
+# depends on OpenACS website toolkit at OpenACS.org
+# Copyright 2013 by Benjamin Brink
+# kappa@dekka.com
+# Published under GPL License. See package README.md file
 # generic header for static .adp pages
+
+# this page split into MVC components:
+#  inputs/observations (controller), actions (model), and outputs/reports (view) sections
+
+# overview
+# Modes are views, or one of these compound action/views
+    # d delete (d x) then view as before (where x = l, r or v)
+    # t trash (d x) then view as before (where x = l, r or v)
+    # w write (d x) , then view page_id (v)
+
+# Actions
+    # d = delete template_id or page_id
+    # t = trash template_id or page_id
+    # w = write page_id,template_id, make new page_id for template_id
+    # a = make page_id the active revision for template_id
+# Views
+    # e = edit page_url, presents defaults (new) if page doesn't exist
+    # v = view page_url
+    # l = list pages of instance
+    # r = view/edit page_url revisions
+    # default = 404 return
+
+    # url has to come from form in order to pass info via index.vuh
+    # set conn_package_url [ad_conn package_url]
+    # set url [string range $url [string length $conn_package_url] end]
+    # get page_id from url, if any
+
+
+# INPUTS / CONTROLLER
+
+# set defaults
+# template_id is first page_id, subsequent revisions have same template_id, but new page_id
+# flags are blank -- an unused db column / page attribute for extending the app for use cases
+# url has to be a given (not validated), since this page may be fed $url via an index.vuh
+
+
+# ACTIONS, PROCESSES / MODEL
+
+
+# OUTPUT / VIEW
+# using switch, because there's only one view at a time
+
+#### stopped here.
 
 set title "file utility"
 set context [list $title]

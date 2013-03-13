@@ -16,10 +16,14 @@
         <maturity>0</maturity>
 
         <provides url="futil" version="5.70a"/>
-
+        <requires url="q-forms" version="0.1d"/>
+        <requires url="spreadsheet" version="0.1d"/>
         <callbacks>
         </callbacks>
         <parameters>
+            <parameter datatype="number"  min_n_values="1"  max_n_values="1"  name="ActivatedP"  default="0" description="Shall users be allowed to use this package? 0 is no. 1 is yes." section_name="security"/>
+            <parameter datatype="string"  min_n_values="1"  max_n_values="1"  name="BaseFilePATH"  default="www/resources" description="The relative base file path. All file references are scoped to acs_root_dir joined with this directory. acs_root_dir is the directory containing the base directories: package, www, log, tcl, etc, and content-repository-content-files." section_name="security"/>
+
         <!-- No version parameters -->
         </parameters>
 
