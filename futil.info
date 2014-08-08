@@ -9,15 +9,15 @@
     <implements-subsite-p>f</implements-subsite-p>
     <inherit-templates-p>f</inherit-templates-p>
     
-    <version name="5.70a" url="http://openacs.org/repository/download/apm/futil-5.70a.apm">
-        <owner url="mailto:kappa@dekka.com">Benjamin Brink</owner>
+    <version name="0.001" url="http://openacs.org/repository/download/apm/futil-0.001.apm">
+        <owner url="mailto:tekbasse@yahoo.com">Benjamin Brink</owner>
         <summary>Allows web initiated file command.</summary>
         <description format="text/plain">This package provides a web UI for file manipulations, such as copy delete un/trash move for users with required permissions. The base url is scoped by a parameter and to within the OpenACS root directory.</description>
         <maturity>0</maturity>
 
-        <provides url="futil" version="5.70a"/>
-        <requires url="q-forms" version="0.1d"/>
-        <requires url="spreadsheet" version="0.1d"/>
+        <provides url="futil" version="0.001"/>
+        <requires url="q-forms" version="0.001"/>
+        <requires url="spreadsheet" version="0.001"/>
         <callbacks>
         </callbacks>
         <parameters>
