@@ -1,5 +1,6 @@
 File Utility
 ============
+status: pre-alpha
 
 For the latest updates to this readme file, see: http://github.com/tekbasse/futil/blob/master/README.md
 
@@ -43,3 +44,4 @@ features
 --------
 
 TBD
+see also tcllib: http://wiki.tcl.tk/776
