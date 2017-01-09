@@ -11,12 +11,9 @@ introduction
 ------------
 
 File Utility is an OpenACS file utility web-app.
-It allows files in scoped directories to be managed in a web-based publishing environment.
-It is not tied to vertical web applications, such as OpenACS ecommerce package.
 
 This package is the result of some web administrators showing interest in 
-having a file utility to be able to delegate some web page resource management 
-to priviledged users.
+having a file utility to be able to delegate some web page resource management.
 
 license
 -------
@@ -29,7 +26,7 @@ A local copy is available at futil/www/doc/LICENSE.html
 
     This program is free software: you can redistribute it and/or modify
     it under the terms of the GNU General Public License as published by
-    the Free Software Foundation, either version 3 of the License, or
+    the Free Software Foundation, either version 2 of the License, or
     (at your option) any later version.
 
     This program is distributed in the hope that it will be useful,
@@ -44,4 +41,12 @@ features
 --------
 
 TBD
+
+allow files in scoped directories to be managed in a web-based publishing environment.
+
+allow exporting/importing of a set of tables to ease transfer of data between packages in different systems.
+
+export to text, import direct, or via qss_tips_* for bulk editing in target system prior to final import.
+
+
 see also tcllib: http://wiki.tcl.tk/776
